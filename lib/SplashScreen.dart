@@ -3,6 +3,7 @@ import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:strong_pass/HomePage.dart';
 import 'package:page_transition/page_transition.dart';
+import 'main.dart';
 
 class SplashScreen extends StatelessWidget {
   @override
@@ -13,7 +14,6 @@ class SplashScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // Text("💪",style: TextStyle(fontSize: 32),),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -30,7 +30,7 @@ class SplashScreen extends StatelessWidget {
               ],),
             ],
           ),
-          nextScreen: HomePage(),
+          nextScreen: NavBar(),
           splashTransition: SplashTransition.fadeTransition,
           pageTransitionType: PageTransitionType.rightToLeft,
           backgroundColor: Colors.black26,
